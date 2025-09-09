@@ -19,12 +19,24 @@
     </header>
 
     <main>
-        <section id="hero">
-            <div class="hero-content">
-                <img src="images/profile/profile.png" alt="Sando Mathew" class="profile-pic">
-                <h1>Sando Mathew</h1>
-                <p class="tagline">Senior Program Manager & Machine Learning Engineer</p>
+        <section id="hero" class="hero-section">
+          <div class="hero-container">
+            <div class="hero-text">
+              <h1 class="fade-slide">Sando Mathew</h1>
+              <h2 class="fade-slide delay1"> AI & ML Leader | Senior Program Manager</h2>
+              <p class="fade-slide delay2">
+                Driving digital transformation, AI/ML innovation, and enterprise-scale modernization.
+                20+ years experience leading global teams and delivering $10M+ strategic programs.
+              </p>
+              <div class="hero-buttons fade-slide delay3">
+                <a href="#projects" class="btn-primary">View Projects</a>
+<!--                <a href="Sando_Mathew_Resume.pdf" class="btn-secondary" target="_blank">Download Resume</a>-->
+              </div>
             </div>
+            <div class="hero-image fade-slide delay2">
+              <img src="images/profile/profile.png" alt="Sando Mathew Profile Picture">
+            </div>
+          </div>
         </section>
 
         <section id="about">
@@ -97,14 +109,38 @@
         </section>
 
         <section id="projects">
-            <h2>Projects</h2>
-            <div class="project-item">
-                <h3><a href="https://github.com/sandomathew/petpalai">PetPalAI (GenAI Application) for pet owners</a></h3>
-                <p>• Designed Django-based GenAI app integrating LangChain & Ollama for LLM-driven data extraction.
+          <h2>Projects</h2>
+          <div class="project-grid">
+            <div class="project-card">
+              <h3>PetPalAI (GenAI Application) for pet owners</h3>
+              <p>• Designed Django-based GenAI app integrating LangChain & Ollama for LLM-driven data extraction.
 • Prototyping multi-agent workflows (account/pet setup) with autonomous pipelines using AWS/GCP.
-• Applied responsible AI practices for validation, governance, and scalability. </p>
+• Applied responsible AI practices for validation, governance, and scalability.</p>
+              <div class="project-hover">
+                <p><strong>Stack:</strong> Django, LangChain, Ollama, RAG, Vector DB (Chroma DB)</p>
+                <p><strong>Outcomes:</strong> Validated multi-agent workflows, applied Responsible AI practices.</p>
+                <a href="https://github.com/sandomathew/petpalai" target="_blank">View Code</a>
+              </div>
             </div>
-            </section>
+            <div class="project-card">
+              <h3>ML initiative: support process optimization</h3>
+              <p>Kick-started a ML initiative for a Fortune 100 retail client to optimize support process to identify ticket anomalies, routing and assignment automation. </p>
+              <div class="project-hover">
+                <p><strong>Stack:</strong> BQML, ARIMA+, XGBOOST, Linear and Logistic Regression, Python, BigQuery, SQL</p>
+                <p><strong>Outcomes:</strong> Reduced MTTR by 50%, productivity increase by 75%, SLA optimization, improved customer satisfaction.</p>
+              </div>
+            </div>
+            <div class="project-card">
+              <h3>Incident Management Web App</h3>
+              <p>Custom incident management automation tool reducing incident manager overhead, streamlining process.</p>
+              <div class="project-hover">
+                <p><strong>Stack:</strong> Python, Django, Pandas, Matplotlib, ServiceNow and PagerDuty API integrations</p>
+                <p><strong>Outcomes:</strong> Reduced change outages by 95%, 100% adoption by incident managers, features incorporated to MIM.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
 
 <section id="testimonials">
     <h2>Appreciations & Recommendations</h2>
