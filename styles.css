@@ -8,6 +8,7 @@ body {
     color: #222; /* Charcoal text */
 }
 
+
 /* Container for all content */
 main {
     max-width: 960px;
@@ -35,10 +36,16 @@ h2 {
 
 /* Navigation Bar */
 .navbar {
+    position: fixed;
+    top: 0;               
+    left: 0;
+    width: 100%;
     background-color: #1a237e;
     padding: 15px 20px;
     text-align: center;
+    z-index: 1000;
 }
+
 
 .nav-link {
     color: white;
@@ -52,8 +59,11 @@ h2 {
     color: #29b6f6 /* Cyan accent on hover */
 }
 
+
+
 /* Hero Section */
 .hero-section {
+    margin-top: 50px;	
     padding: 80px 20px;
     background: linear-gradient(135deg,#f0f4f7, #e0e0e0);
     color: white;
@@ -151,6 +161,21 @@ h2 {
     }
 }
 
+.hero-badges {
+    display: flex;
+    gap: 20px;
+    margin-top: 80px;
+}
+
+.cert-badge {
+    height: 60px;
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.15));
+    transition: transform 0.3s ease;
+}
+
+.cert-badge:hover {
+    transform: scale(1.1);
+}
 
 /* Project Sections */
 section {
@@ -241,6 +266,7 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
+
 /* Footer */
 footer {
     text-align: center;
@@ -249,6 +275,64 @@ footer {
     color: white;
     font-size: 0.9em;
 }
+
+/* Certifications Sections */
+#certifications {
+    margin-top: 60px;
+    background-color: #f5f5f5; /* Light silver */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.cert-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.cert-card img {
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.cert-info h3 {
+    font-size: 1.1rem;
+    color: #1a237e; /* Navy */
+    margin-bottom: 8px;
+}
+
+.cert-info p {
+    font-size: 0.9rem;
+    color: #222; /* Charcoal text */
+}
+
+.cert-info a {
+    color: #29b6f6; /* Cyan accent */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.cert-info a:hover {
+    text-decoration: underline;
+    color: #66bb6a; /* Green hover accent */
+}
+
 
 /* Testimonial Section Styles */
 #testimonials {
