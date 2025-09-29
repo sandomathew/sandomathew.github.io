@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetPalAI – Project Detail</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Reuse your main CSS -->
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="https://github.com/sandomathew/petpalai" class="nav-link" target="_blank">View Code</a>
+    <a href="#demos" class="nav-link">Demos</a>
+    <a href="index.html#contact" class="nav-link">Contact</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-container fade-slide">
+      <div class="hero-text">
+        <h1>PetPalAI</h1>
+        <h2>GenAI-powered Pet Management Platform</h2>
+        <p>Centralizing pet health, food, and care with AI-driven insights.</p>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- Overview -->
+    <section>
+      <h2>Overview</h2>
+      <p>
+        PetPalAI is a scalable, modular Django-based GenAI web application 
+        designed for pet owners to manage all pet-related information in one place. 
+        It leverages LLMs for food label extraction, integrates user/pet management, 
+        and provides AI-powered recommendations.
+      </p>
+    </section>
+
+    <!-- Tech Stack -->
+    <section>
+      <h2>Tech Stack</h2>
+      <div class="project-grid">
+        <div class="project-card">🐍 Python / Django</div>
+        <div class="project-card">🧠 Ollama LLM</div>
+        <div class="project-card">📊 Pandas, NumPy</div>
+        <div class="project-card">🗄 SQLite → scalable to Postgres</div>
+        <div class="project-card">🌐 HTML/CSS/JS Frontend</div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section>
+      <h2>Key Features</h2>
+      <div class="project-grid">
+        <div class="project-card">🍖 Food Analysis – upload labels → AI extracts nutrition info.</div>
+        <div class="project-card">🤖 AI Agents (in progress) – multi-step workflows like
+          “Set up my new pet account” via natural language.
+        </div>
+        <div class="project-card">🐾 Pet Profiles (in progress) – medical history, vaccinations, appointments.</div>
+        <div class="project-card">📊 Reports (future) – health & diet trends.</div>
+
+      </div>
+    </section>
+
+    <!-- Demo -->
+    <section id="demos">
+      <h2>Demo</h2>
+      <p>Watch a quick walkthrough of PetPalAI:</p>
+      <div class="video-card">
+        <video controls>
+          <source src="images/Demo/chat-demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-desc">
+          <h3>Agentic AI Setup</h3>
+          <ul>
+            <li>Use natural language to set up accounts, register pets, and get food nutrition info.</li>
+            <li>Responsible AI (case documentation), and human in loop.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Outcomes -->
+    <section>
+      <h2>Outcomes & Impact</h2>
+      <ul>
+        <li>Demonstrates LLM orchestration + Django modular design, OCR, RAG.</li>
+        <li>Showcases AI integration into practical, real-world use cases.</li>
+        <li>Serves as a demo project for AI leader interviews.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sando | AI & Data Science Manager Portfolio</p>
+  </footer>
+</body>
+</html>
