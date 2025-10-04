@@ -399,6 +399,14 @@ footer {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
+    	.video-card {
+    f	lex-direction: column;
+    }
+
+    .video-card video {
+     	border-radius: 12px 12px 0 0;
+     	max-width: 100%;
+    }
     .testimonial-image-wrapper {
         position: static; /* Stack on top/bottom for smaller screens */
         transform: none;
@@ -409,6 +417,14 @@ footer {
     }
 }
 
+/* Video Section */
+#demos {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
 .video-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -417,10 +433,14 @@ footer {
 }
 
 .video-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   background-color: #f0f4f7;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -431,8 +451,9 @@ footer {
 
 .video-card video {
   width: 100%;
-  border-radius: 8px;
-  margin-bottom: 15px;
+  max-width: 480px;
+  border-radius: 12px 0 0 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .video-desc h3 {
@@ -440,7 +461,28 @@ footer {
   margin-bottom: 8px;
 }
 
-.video-desc p {
+.video-desc {
   color: #444;
   font-size: 0.95rem;
+  flex: 1;
+  padding: 20px;
+}
+
+
+/* Architecture Section */
+.architecture-section {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.architecture-img {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.architecture-img:hover {
+  transform: scale(1.02);
 }
