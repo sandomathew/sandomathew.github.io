@@ -101,6 +101,20 @@
           </ul>
         </div>
       </div>
+      <div class="video-card">
+        <video controls>
+          <source src="images/Demo/PetPalAI-ORC-fallback.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-desc">
+          <h3>Multi-Modal LLM (Vision) Integration for OCR</h3>
+          <ul>
+            <li><b>Performance Focus:</b> Utilize Python-based OCR (e.g., Tesseract, EasyOCR) as the primary engine, monitoring confidence scores to ensure fast, lightweight text extraction.</li>
+            <li><b>Robustness Focus:</b> Trigger a multi-modal LLM (Vision-Language model) for semantic re-evaluation when OCR confidence falls below a defined threshold, ensuring higher accuracy on complex or noisy inputs.</li>
+            <li><b>Cost Optimization Focus:</b> Invoke the multi-modal LLM selectively — only when the baseline OCR fails or yields uncertain results — minimizing API and compute costs.</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <!-- Outcomes -->
