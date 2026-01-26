@@ -3,75 +3,147 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PetPalAI – Project Detail</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Reuse your main CSS -->
+  <title>PetPalAI – Agentic Platform</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- Navbar -->
   <nav class="navbar">
     <a href="https://sandomathew.github.io/" class="nav-link">Home</a>
-    <a href="https://github.com/sandomathew/petpalai" class="nav-link" target="_blank">View Code</a>
-    <a href="#demos" class="nav-link">Demos</a>
+    <a href="#vision-strategy" class="nav-link">Vision & Strategy</a>
+    <a href="#scope" class="nav-link">Definition & Scope</a>
+    <a href="#solution" class="nav-link">Solution & Prototype</a>
+    <a href="#outcomes" class="nav-link">Outcomes & Key Learnings</a>
     <a href="https://sandomathew.github.io/#contact" class="nav-link">Contact</a>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero-section">
-    <div class="hero-container fade-slide">
-      <div class="hero-text">
-        <h1>PetPalAI</h1>
-        <h2>GenAI-powered Pet Management Platform</h2>
-        <p>Centralizing pet health, food, and care with AI-driven insights.</p>
-      </div>
-    </div>
-  </section>
-
   <main>
-    <!-- Overview -->
-    <section>
-      <h2>Overview</h2>
-      <p>
-        PetPalAI is a scalable, modular Django-based GenAI web application 
-        designed for pet owners to manage all pet-related information in one place. 
-        It leverages LLMs for food label extraction, integrates user/pet management, 
-        and provides AI-powered recommendations.
-      </p>
-      <!-- Architecture Diagram -->
-      <div class="architecture-section">
-        <h3>High-Level Architecture</h3>
-        <img src="images/Demo/high_level_architecture.jpg" alt="PetPalAI Architecture Diagram" class="architecture-img">
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+            <div class="hero-container">
+              <div class="hero-text">
+            <h1 class="fade-slide">PetPalAI</h1>
+            <h2 class="fade-slide delay1">PetPalAI – Product Case Study – Platform</h2>
+            <p class="fade-slide delay2"><b>North Star:</b> To be the one-stop, AI-powered Pet Pal platform focused on empowering pet parents with data-driven guidance on diet and health.</p>
+          </div>
+        </div>
+    </section>
+    <!-- Vision & Strategy -->
+    <section id="vision-strategy">
+      <h2>Vision & Strategy</h2>
+      <div>
+        <h3>Problem & Discovery</h3>
+        <p>
+          <b>Problem: </b>
+          Pet parents face "information overload" with complex nutritional labels, fragmented health and medical history.
+          Existing solutions are either manual or lack the intelligence to provide actionable insights from unstructured data.
+        </p>
+        <p>
+          <b>Strategic Approach: </b>
+          Build a scalable, modular, AI-first platform that can evolve with emerging GenAI technologies,
+          supporting OCR, RAG, and multi-modal LLMs for practical, real-world pet care applications.
+        </p>
       </div>
+      <div>
+        <h3>User Personas & Segmentation</h3>
+        <div class="project-grid">
+          <div class="project-card">Pet parents (current & prospective)</div>
+          <div class="project-card">Veterinarians</div>
+          <div class="project-card">Shelters/Foster care</div>
+          <div class="project-card">Pet health brands (wearables and smart solution or agents)</div>
+        </div>
+      </div>
+
     </section>
 
-    <!-- Tech Stack -->
-    <section>
-      <h2>Tech Stack</h2>
-      <div class="project-grid">
-        <div class="project-card">🐍 Python / Django</div>
-        <div class="project-card">🧠 Ollama LLM</div>
-        <div class="project-card">📊 Pandas, NumPy</div>
-        <div class="project-card">🗄 SQLite → scalable to Postgres</div>
-        <div class="project-card">🌐 HTML/CSS/JS Frontend</div>
+    <!-- Product Definition & Scope -->
+    <section id="scope">
+      <h2>Definition & Scope</h2>
+      <div>
+        <h3>Goals</h3>
+        <p>
+          The goal of PetPalAI is to centralize pet care information while leveraging AI to provide actionable insights for pet parents.
+          By creating a modular platform, we aim to:
+            <ul>
+              <li>Empower users to manage pet health, diet, and appointments efficiently.</li>
+              <li>Integrate AI Agents to perform multi-step workflows via natural language commands.</li>
+              <li>Support organizations with AI-powered insights for pet nutrition, care, and policy compliance.</li>
+            </ul>
+        </p>
+        <h3>Success Metrics (KPIs)</h3>
+        <ul class="case-list">
+            <li><b>Reduce effort: </b>Cut label interpretation time from minutes to <b>&lt;5 seconds</b>.</li>
+            <li><b>Improve accuracy: </b>Boost ingredient extraction accuracy to <b>85%+</b> via multimodal fallback.</li>
+            <li><b>AI-first onboarding: </b><b>80%+</b> onboarding completion using conversational flows.</li>
+            <li><b>Explainability: </b>Deliver interpretable nutrition insights with >90% trust rating.</li>
+        </ul>
       </div>
-    </section>
+      <div>
+          <h3>In Scope (Prototype)</h3>
+              <ul class="case-list">
+                  <li>AI food label extraction</li>
+                  <li>OCR → Vision LLM fallback pipeline</li>
+                  <li>Ingredient vector database & RAG enrichment</li>
+                  <li>Agentic onboarding flows</li>
+                  <li>Basic pet profile creation</li>
+              </ul>
+          <h3>Out of Scope</h3>
+              <ul class="case-list">
+                  <li>Mobile apps</li>
+                  <li>Real vet integrations</li>
+                  <li>Wearable/sensor data</li>
+                  <li>Production authentication</li>
+                  <li>Community features</li>
+              </ul>
+      </div>
 
-    <!-- Features -->
-    <section>
-      <h2>Key Features</h2>
+    </section>
+    
+    <!-- Solution -->
+    <section id="solution">
+      <h2>Solution & Prototype</h2>
+      <h3>Roadmap</h3>
+      <h4>Now:</h4>
+          <div class="project-grid">
+              <div class="project-card">Agentic onboarding</div>
+              <div class="project-card">OCR + Vision LLM fallback pipeline</div>
+              <div class="project-card">Ingredient vector database</div>
+              <div class="project-card">RAG & GenAI recommendation</div>
+           </div>
+      <h4>Next:</h4>
+          <div class="project-grid">
+            <div class="project-card">Reports – health & diet trends</div>
+            <div class="project-card">Food comparison intelligence</div>
+            <div class="project-card">Vet PDF summarization</div>
+            <div class="project-card">Profile-based dietary recommendations</div>
+          </div>
+      <h4>Later:</h4>
+          <div class="project-grid">
+            <div class="project-card">3rd-party integrations</div>
+            <div class="project-card">Community insights & shared experiences</div>
+          </div>
+      <h3>Key Features</h3>
       <div class="project-grid">
-        <div class="project-card">🍖 Food Analysis – upload labels → AI extracts nutrition info.</div>
-        <div class="project-card">🤖 AI Agents (in progress) – multi-step workflows like
+        <div class="project-card">Food Analysis – upload labels → AI extracts nutrition info.</div>
+        <div class="project-card">AI Agents – multi-step workflows like
           “Set up my new pet account” via natural language.
         </div>
-        <div class="project-card">🐾 Pet Profiles (in progress) – medical history, vaccinations, appointments.</div>
-        <div class="project-card">📊 Reports (future) – health & diet trends.</div>
+        <div class="project-card">Administration (in progress) – AI Evals and observability.</div>
       </div>
-    </section>
-
-
-    <!-- Demo -->
-    <section id="demos">
-      <h2>Demo</h2>
+      <!-- Architecture Diagram -->
+      <h3>High-Level Architecture</h3>
+      <div class="architecture-section">
+        <img src="images/Demo/high_level_architecture.jpg" alt="PetPalAI Architecture Diagram" class="architecture-img">
+      </div>
+      <h3>Tech Stack</h3>
+      <div class="project-grid">
+        <div class="project-card">Python / Django</div>
+        <div class="project-card">Ollama LLM</div>
+        <div class="project-card">Pandas, NumPy</div>
+        <div class="project-card">SQLite → scalable to Postgres</div>
+        <div class="project-card">HTML/CSS/JS Frontend</div>
+      </div>
+      <h3>Prototype</h3>
       <p>Watch a quick walkthrough of PetPalAI:</p>
       <div class="video-card">
         <video controls>
@@ -118,19 +190,60 @@
     </section>
 
     <!-- Outcomes -->
-    <section>
-      <h2>Outcomes & Impact</h2>
-      <ul>
-        <li>Demonstrates LLM orchestration + Django modular design, OCR, RAG.</li>
-        <li>Showcases AI integration into practical, real-world use cases.</li>
-        <li>Serves as a demo project for AI leader interviews.</li>
-      </ul>
+    <section id="outcomes">
+      <h2>Outcomes & Key Learnings</h2>
+      <h3>Outcomes</h3>
+          <ul>
+              <li>
+                <b>Validated that AI can reliably extract and interpret complex nutrition labels</b>
+                using a <b>multimodal pipeline (OCR → Vision LLM → RAG)</b>, reducing user effort
+                and improving clarity.
+              </li>
+
+              <li>
+                <b>Confirmed the viability of an AI-first onboarding model</b>, where
+                <b>natural-language workflows replace multi-step forms</b>, improving usability and
+                reducing friction.
+              </li>
+
+              <li>
+                <b>Demonstrated that a modular, Django-based architecture can support scalable
+                feature extensions</b> such as ingredient intelligence, personalized recommendations,
+                and pet-care insights.
+              </li>
+
+              <li>
+                <b>Achieved a "Zero-Grip" user experience</b> by implementing
+                <b>Async I/O Streaming</b>, enabling <b>immediate feedback during LLM processing</b>
+                and significantly <b>reducing drop-off rates</b> during complex nutritional analysis.
+              </li>
+          </ul>
+      <h3>Key Learnings</h3>
+          <ul>
+              <li>
+        <b>Multimodal pipelines significantly outperform OCR-only solutions.</b><br>
+        OCR alone struggled with low-quality images; adding Vision LLM
+        re-evaluation improved accuracy and confidence without increasing cost
+        dramatically.
+            </li>
+            <li>
+              <b>Personalization is a differentiator in pet-care products.</b><br>
+              Generic advice is abundant online; what users valued was guidance
+              tailored to breed, age, diet constraints, and medical history —
+              a clear opportunity for future versions.
+            </li>
+            <li>
+              <b>Platform opportunities exist beyond pet parents.</b><br>
+              The architecture naturally supports multi-sided value: vets, shelters/foster care, and Pet health brands — enabling potential
+              platform evolution beyond a single-user app.
+            </li>
+          </ul>
     </section>
 
   </main>
 
   <footer>
-    <p>&copy; 2025 Sando Mathew. All rights reserved.</p>
+    <p>&copy; 2026 Sando Mathew. All rights reserved.</p>
   </footer>
 </body>
 </html>
