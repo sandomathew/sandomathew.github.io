@@ -9,7 +9,7 @@
 <body>
   <!-- Navbar -->
   <nav class="navbar">
-    <a href="https://sandomathew.github.io/" class="nav-link">Home</a>
+    <a href="https://sandomathew.github.io/" target="_blank" class="nav-link">About Me</a>
     <a href="#vision-strategy" class="nav-link">Vision & Strategy</a>
     <a href="#scope" class="nav-link">Definition & Scope</a>
     <a href="#solution" class="nav-link">Solution & Prototype</a>
@@ -130,6 +130,55 @@
         </div>
         <div class="project-card">Administration (in progress) – AI Evals and observability.</div>
       </div>
+      <!-- Strategic Decisions & Trade-offs -->
+      <h3>Strategic Decisions & Trade-offs</h3>
+        <p>As a Senior Platform PM, I prioritized long-term scalability, data privacy,
+            and unit economics. Below are the key strategic pivots made during development:</p>
+
+        <div class="table-container" style="overflow-x: auto; margin-bottom: 30px;">
+          <table style="width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            <thead>
+              <tr style="background-color: #f8f9fa; border-bottom: 2px solid #dee2e6;">
+                <th style="padding: 15px; text-align: left;">Decision Pillar</th>
+                <th style="padding: 15px; text-align: left;">Strategic Choice</th>
+                <th style="padding: 15px; text-align: left;">Rationale (The "Why")</th>
+                <th style="padding: 15px; text-align: left;">Impact/Trade-off</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid #eee;">
+                <td style="padding: 15px;"><strong>Data Sovereignty</strong></td>
+                <td style="padding: 15px;">Self-hosted Ollama</td>
+                <td style="padding: 15px;">Ensures PII/Pet health data remains offline; eliminates third-party API data leaks.</td>
+                <td style="padding: 15px;">Reduced marginal cost per user to $0; traded managed scaling for privacy.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #eee;">
+                <td style="padding: 15px;"><strong>Quality & Trust</strong></td>
+                <td style="padding: 15px;">HITL (Human-in-the-Loop)</td>
+                <td style="padding: 15px;">Mandatory validation gate for medical output to prevent hallucinations.</td>
+                <td style="padding: 15px;">Ensured 100% diagnostic safety; traded instant closure for higher fidelity.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #eee;">
+                <td style="padding: 15px;"><strong>Product Velocity</strong></td>
+                <td style="padding: 15px;">Modular Django Apps</td>
+                <td style="padding: 15px;">Decoupled core AI engine from the UI to allow rapid launches of new pet verticals.</td>
+                <td style="padding: 15px;">Increased initial "plumbing" time but slashed future feature time-to-market.</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #eee;">
+                <td style="padding: 15px;"><strong>UX Performance</strong></td>
+                <td style="padding: 15px;">Async Streaming</td>
+                <td style="padding: 15px;">Used asynchronous output to prioritize Time-to-First-Token (TTFT).</td>
+                <td style="padding: 15px;">Reduced perceived latency by 60%; solved "loading fatigue" during inference.</td>
+              </tr>
+              <tr>
+                <td style="padding: 15px;"><strong>Cost Optimization</strong></td>
+                <td style="padding: 15px;">Tiered Vision Routing</td>
+                <td style="padding: 15px;">Implemented an intelligent router: standard OCR for structured text extraction, with a fallback to Vision LLMs for complex visual diagnostics when OCR confidence falls below a set threshold.</td>
+                <td style="padding: 15px;">Reduced inference costs by ~40% while ensuring high-fidelity extraction for both documents and images.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       <!-- Architecture Diagram -->
       <h3>High-Level Architecture</h3>
       <div class="architecture-section">
